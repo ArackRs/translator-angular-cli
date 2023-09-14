@@ -1,1 +1,91 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root {
+  --bg-body: #f5f5f5;
+  --bg-primary: #000000;
+  --bg-secondary: #fff;
+  --bg-selection: #393939;
+  --color-text: #ffffff;
+  --color-selection: #fff;
+  --tipo-principal: Roboto, "Helvetica Neue", sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before, *::after { display: block; }
+
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: inline-block;
+  object-fit: cover;
+  object-position: center center;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a { display: inline; }
+li { list-style-type: none; }
+
+h1, h2, h3, h4, h5, h6, p, span, a, blockquote {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+
+::selection {
+  background-color: var(--bg-selection);
+  color: var(--color-text);
+}
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  appearance: none;
+}
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  font-size: 100%;
+}
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--color-text);
+  background: var(--bg-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+section {
+  padding: 7rem 0;
+  color: black;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
